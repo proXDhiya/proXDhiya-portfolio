@@ -135,8 +135,7 @@ nav > ul > li:nth-child(6) {
 }
 
 .header-box {
-    height: 500px;
-    margin: 120px auto 0 auto;
+    margin: 150px auto 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
@@ -198,7 +197,6 @@ nav > ul > li:nth-child(6) {
 }
 
 #about-me {
-    margin-top: 40px;
     text-align: center;
 }
 
@@ -223,5 +221,10 @@ nav > ul > li:nth-child(6) {
 }
 
 #services {
-    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    height: 500px;
+    justify-items: center;
+    align-items: center;
 }
