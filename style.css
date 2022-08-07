@@ -26,6 +26,7 @@
     --secondary-color: #5d6975;
     --tertiary-color: #1cade7;
     --quaternary-color: #748af8;
+    --quinary-color: #323a64;
 }
 
 * {
@@ -224,7 +225,72 @@ nav > ul > li:nth-child(6) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    height: 500px;
+    width: calc(var(--breakpoint-xl) - 100px);
+    margin: 0 auto 100px auto;
     justify-items: center;
-    align-items: center;
+    grid-gap: 30px;
+}
+
+#services > h2 {
+    grid-column: 1 / span 3;
+    font-size: var(--font-size-4xl);
+}
+
+.service-box {
+    width: 90%;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: rgba(116, 138, 248, 0.35) 0px 5px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.service-box > img {
+    width: 70%;
+    height: 50%;
+    margin: 20px auto;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.service-box > h3 {
+    font-size: var(--font-size-xl);
+    text-align: center;
+    margin: 5px auto;
+    color: var(--quinary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.service-box > p {
+    font-size: var(--font-size-sm);
+    text-align: center;
+    width: 85%;
+    height: auto;
+    margin: 15px auto;
+    color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.service-box > p > span {
+    font-size: var(--font-size-sm);
+    color: var(--tertiary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.service-box:hover {
+    box-shadow: rgba(116, 138, 248, 0.5) 0px 5px 15px;
+}
+
+.service-box:hover > img {
+    filter: brightness(0.95);
+    width: 75%;
+}
+
+.service-box:hover > h3 {
+    color: var(--quaternary-color);
+    scale: 1.05;
+}
+
+.service-box:hover > p {
+    color: var(--primary-color);
+    scale: 1.05;
 }
