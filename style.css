@@ -82,28 +82,28 @@ nav {
     transition: all 0.3s ease-in-out;
 }
 
-nav > ul {
+nav>ul {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: .8fr repeat(6, 1fr) .8fr;
     grid-template-rows: 100%;
     align-items: center;
     justify-items: center;
     list-style: none;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
     text-decoration: none;
     color: var(--primary-color);
     transition: all 0.3s ease-in-out;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
     color: var(--tertiary-color);
 }
 
-nav > ul > li > a::after {
+nav>ul>li>a::after {
     content: '';
     display: block;
     width: 0%;
@@ -112,7 +112,7 @@ nav > ul > li > a::after {
     transition: all 0.3s ease-in-out;
 }
 
-nav > ul > li > a:hover::after {
+nav>ul>li>a:hover::after {
     width: 100%;
 }
 
@@ -125,12 +125,12 @@ nav > ul > li > a:hover::after {
     font-weight: var(--font-weight-bold);
 }
 
-nav > ul > li:nth-child(1) {
+nav>ul>li:nth-child(1) {
     grid-column: 1 / span 2;
     justify-self: start;
 }
 
-nav > ul > li:nth-child(6) {
+nav>ul>li:nth-child(6) {
     grid-column: 7 / span 2;
     justify-self: end;
 }
@@ -149,7 +149,7 @@ nav > ul > li:nth-child(6) {
     height: 100%;
 }
 
-.right-section > img {
+.right-section>img {
     display: block;
     width: 90%;
     height: auto;
@@ -167,11 +167,11 @@ nav > ul > li:nth-child(6) {
     margin-top: -10px;
 }
 
-.left-section > h1 {
+.left-section>h1 {
     font-size: var(--font-size-6xl);
 }
 
-.left-section > p {
+.left-section>p {
     width: 90%;
     color: var(--secondary-color);
     font-weight: var(--font-weight-light);
@@ -179,14 +179,14 @@ nav > ul > li:nth-child(6) {
     margin-bottom: 20px;
 }
 
-.left-section__btn > a {
+.left-section__btn>a {
     display: inline-block;
     text-decoration: none;
     padding: 0.5rem 1.8rem;
     text-transform: uppercase;
 }
 
-.left-section__btn > a:first-child {
+.left-section__btn>a:first-child {
     margin-right: 45px;
 }
 
@@ -201,19 +201,19 @@ nav > ul > li:nth-child(6) {
     text-align: center;
 }
 
-#about-me > h2 {
+#about-me>h2 {
     font-size: var(--font-size-4xl);
     margin-bottom: 20px;
 }
 
-#about-me > h2 > span {
+#about-me>h2>span {
     background-image: linear-gradient(to right, var(--tertiary-color), var(--quaternary-color));
     background-clip: text;
-    -webkit-background-clip: text;  
+    -webkit-background-clip: text;
     color: transparent;
 }
 
-#about-me > p {
+#about-me>p {
     width: 70%;
     margin: 0 auto;
     font-size: var(--font-size-xl);
@@ -231,7 +231,7 @@ nav > ul > li:nth-child(6) {
     grid-gap: 30px;
 }
 
-#services > h2 {
+#services>h2 {
     grid-column: 1 / span 3;
     font-size: var(--font-size-4xl);
 }
@@ -244,7 +244,7 @@ nav > ul > li:nth-child(6) {
     transition: all 0.3s ease-in-out;
 }
 
-.service-box > img {
+.service-box>img {
     width: 70%;
     height: 50%;
     margin: 20px auto;
@@ -252,7 +252,7 @@ nav > ul > li:nth-child(6) {
     transition: all 0.3s ease-in-out;
 }
 
-.service-box > h3 {
+.service-box>h3 {
     font-size: var(--font-size-xl);
     text-align: center;
     margin: 5px auto;
@@ -260,7 +260,7 @@ nav > ul > li:nth-child(6) {
     transition: all 0.3s ease-in-out;
 }
 
-.service-box > p {
+.service-box>p {
     font-size: var(--font-size-sm);
     text-align: center;
     width: 85%;
@@ -270,7 +270,7 @@ nav > ul > li:nth-child(6) {
     transition: all 0.3s ease-in-out;
 }
 
-.service-box > p > span {
+.service-box>p>span {
     font-size: var(--font-size-sm);
     color: var(--tertiary-color);
     transition: all 0.3s ease-in-out;
@@ -280,17 +280,44 @@ nav > ul > li:nth-child(6) {
     box-shadow: rgba(116, 138, 248, 0.5) 0px 5px 15px;
 }
 
-.service-box:hover > img {
+.service-box:hover>img {
     filter: brightness(0.95);
     width: 75%;
 }
 
-.service-box:hover > h3 {
+.service-box:hover>h3 {
     color: var(--quaternary-color);
     scale: 1.05;
 }
 
-.service-box:hover > p {
+.service-box:hover>p {
     color: var(--primary-color);
     scale: 1.05;
+}
+
+#lang {
+    text-align: center;
+}
+
+#lang>h2 {
+    font-size: var(--font-size-4xl);
+    margin-bottom: 30px;
+}
+
+.lang_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.lang_container>img {
+    transition: all 0.3s ease-in-out;
+}
+
+.lang_container>img:hover {
+    scale: 1.25;
 }
