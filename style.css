@@ -295,23 +295,18 @@ nav>ul>li:nth-child(6) {
     scale: 1.05;
 }
 
-#lang {
-    text-align: center;
-}
-
 #lang>h2 {
     font-size: var(--font-size-4xl);
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .lang_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(17, 1fr);
     width: 90%;
+    margin: 0 auto;
 }
 
 .lang_container>img {
