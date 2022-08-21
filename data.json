@@ -1,0 +1,19 @@
+{
+    "services": [
+        {
+            "name": "Web Development",
+            "img_url": "./images/undraw_web_developer_re_h7ie.svg",
+            "description": "I can make a full functioning website, responsive and works on all devices. using modern technologies like <span> AngularJS, NodeJS, Express, (MongoDB/PostgreSQL) </span>, and more."
+        },
+        {
+            "name": "Web Development 2",
+            "img_url": "./images/undraw_web_developer_re_h7ie.svg",
+            "description": "I can make a full functioning website, responsive and works on all devices. using modern technologies like <span> AngularJS, NodeJS, Express, (MongoDB/PostgreSQL) </span>, and more."
+        },
+        {
+            "name": "Web Development 3",
+            "img_url": "./images/undraw_web_developer_re_h7ie.svg",
+            "description": "I can make a full functioning website, responsive and works on all devices. using modern technologies like <span> AngularJS, NodeJS, Express, (MongoDB/PostgreSQL) </span>, and more."
+        }
+    ]
+}
