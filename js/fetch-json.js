@@ -27,5 +27,5 @@ xhttp.onreadystatechange = function() {
         }
     }
 };
-xhttp.open("GET", "./../data.json", true);
+xhttp.open("GET", "data.json", true);
 xhttp.send();
