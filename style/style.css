@@ -270,7 +270,7 @@ nav>ul>li:nth-child(6) {
 }
 
 .service-box>p>span {
-    font-size: var(--font-size-sm);
+    font-size: inherit;
     color: var(--tertiary-color);
     transition: all 0.3s ease-in-out;
 }
@@ -347,7 +347,7 @@ nav>ul>li:nth-child(6) {
 }
 
 .project-card:hover {
-    scale: 1.05;
+    scale: 1.01;
 }
 
 .project-card__img {
@@ -385,4 +385,8 @@ nav>ul>li:nth-child(6) {
 .project-card>div:nth-child(2)>a {
     position: absolute;
     bottom: 40px;
+}
+
+.project-card>div:nth-child(2)a:hover {
+    color: var(--quinary-color);
 }
