@@ -2,29 +2,29 @@
     "services": [
         {
             "name": "Web Development",
-            "img_url": "/images/undraw_web_developer_re_h7ie.svg",
+            "img_url": "./images/undraw_web_developer_re_h7ie.svg",
             "description": "I can make a full functioning website, responsive and works on all devices. using modern technologies like <span> AngularJS, NodeJS, Express, (MongoDB/PostgreSQL) </span>, and more."
         },
         {
             "name": "Backend Development",
-            "img_url": "/images/undraw_server_cluster_jwwq.svg",
+            "img_url": "./images/undraw_server_cluster_jwwq.svg",
             "description": "Make a full functioning backend for you, using modern technologies like <span> NodeJS, Express, (MongoDB/PostgreSQL), JWT</span>, and more."
         },
         {
             "name": "Discord Bot",
-            "img_url": "/images/undraw_firmware_re_fgdy.svg",
+            "img_url": "./images/undraw_firmware_re_fgdy.svg",
             "description": "I can make a full functioning Discord bot, using <span> Discord.JS</span>, With a full working command system and a database system."
         }
     ],
     "projects": [
         {
             "name": "Portfolio",
-            "img_url": "/images/projects/portfolio-project.png",
+            "img_url": "./images/projects/portfolio-project.png",
             "description": "I made this portfolio website using <span>HTML, CSS & JS</span> a simple website that you can use to see my projects and contact me."
         },
         {
             "name": "Physics Arabic - Course & Quiz",
-            "img_url": "/images/projects/pfe-project.png",
+            "img_url": "./images/projects/pfe-project.png",
             "description": "I made a web app using <span>Node.JS, Express.JS, PostgreSQL, PUG, CSS & JS</span> a web app that you can use to take the physics course and quiz."
         }
     ]
