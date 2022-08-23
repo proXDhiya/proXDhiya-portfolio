@@ -78,6 +78,7 @@ nav {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    background-color: var(--background-color);
     width: 100%;
     height: 60px;
     transition: all 0.3s ease-in-out;
@@ -192,9 +193,6 @@ nav>ul>li:nth-child(6) {
 }
 
 .nav-scrolled {
-    background-color: var(--background-color);
-    opacity: 0.95;
-    backdrop-filter: blur(5px);
     box-shadow: rgba(0, 0, 0, 0.45) 0px 15px 20px -20px;
 }
 
@@ -359,31 +357,6 @@ nav>ul>li:nth-child(6) {
     background-repeat: no-repeat;
     background-position: center;
     transition: all 0.3s ease-in-out;
-}
-
-:is(
-    #project_1,
-    #project_2,
-    #project_3,
-    #project_4,
-) {
-    background-image: url('./images/projects/undraw_notify_re_65on.svg');
-}
-
-#project_1 {
-    /* background-image: url('./images/undraw_flutter_dev_wvqj.svg'); */
-}
-
-#project_2 {
-    /* background-image: url('./images/undraw_flutter_dev_wvqj.svg'); */
-}
-
-#project_3 {
-    /* background-image: url('./images/undraw_flutter_dev_wvqj.svg'); */
-}
-
-#project_4 {
-    /* background-image: url('./images/undraw_flutter_dev_wvqj.svg'); */
 }
 
 .project-card>div:nth-child(2) {
