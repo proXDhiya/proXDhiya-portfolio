@@ -9,9 +9,9 @@
         <title>ProXdhiya Portfolio</title>
     </head>
     <body>
-        <nav class="container-limit">
+        <nav class="container-limit desktop-nav">
             <ul>
-                <li id="logo-name">ProXDhiya</li>
+                <li class="logo-name">ProXDhiya</li>
                 <li><a href="#about-me_link">About Me</a></li>
                 <li><a href="#services_link">My Services</a></li>
                 <li><a href="#lang_link">Languages/tools</a></li>
@@ -19,6 +19,48 @@
                 <li><a href="#hire-me_link" class="btn delete-nav-effect">Hire Me</a></li>
             </ul>
         </nav>
+
+        <!-- Mobile Nav -->
+        <nav class="container-limit mobile-nav">
+            <h1 class="logo-name">ProXDhiya</h1>
+            <ion-icon name="menu"/>
+        </nav>
+
+        <!-- Modile Slider -->
+        <div class="container-limit mobile-slider">
+            <ul>
+                <li>
+                    <a href="#about-me_link" class="active-mobile-slider">
+                        <ion-icon name="alert-circle"></ion-icon>
+                        <p>About Me</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#services_link">
+                        <ion-icon name="analytics"></ion-icon>
+                        <p>My Services</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lang_link">
+                        <ion-icon name="albums"></ion-icon>
+                        <p>Languages</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects_link">
+                        <ion-icon name="code-working"></ion-icon>
+                        <p>My Projects</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#hire-me_link">
+                        <ion-icon name="call"></ion-icon>
+                        <p>Hire Me</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
         <!-- header section -->
         <header class="container-limit header-box">
@@ -122,5 +164,8 @@
 
         <script src="./js/scroll.js"></script>
         <script src="./js/fetch-json.js"></script>
+        <script src="./js/mobile-nav.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>

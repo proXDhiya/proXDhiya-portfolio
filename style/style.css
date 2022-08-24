@@ -7,6 +7,7 @@
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --font-size-base: 1rem;
+    --font-size-2sm: 0.75rem;
     --font-size-sm: 0.875rem;
     --font-size-lg: 1.125rem;
     --font-size-xl: 1.25rem;
@@ -51,6 +52,14 @@ body {
     display: block;
     max-width: var(--breakpoint-xl);
     margin: 0 auto;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-slider {
+    display: none;
 }
 
 .delete-nav-effect::after {
@@ -119,13 +128,14 @@ nav>ul>li>a:hover::after {
     width: 100%;
 }
 
-#logo-name {
+.logo-name {
     background-image: linear-gradient(to right, var(--tertiary-color), var(--quaternary-color));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
+    display: inline-block;
 }
 
 nav>ul>li:nth-child(1) {
