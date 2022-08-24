@@ -55,20 +55,23 @@
     .mobile-nav {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        height: 70px;
+        height: 50px;
         align-items: center;
         background-color: transparent;
     }
 
+    .nav-scrolled {background-color: var(--background-color);}
+
     .mobile-slider {
         display: block;
-        width: 85%;
+        width: 300px;
         height: 100%;
         background-color: var(--quaternary-color);
         position: fixed;
         top: 0;
         left: -85%;
         transition: all 0.5s;
+        z-index: 5;
     }
 
     .mobile-nav>.logo-name {
@@ -86,7 +89,7 @@
     }
 
     .mobile-slider>ul {
-        margin: 100px 0 0 30px;
+        margin: 80px 0 0 30px;
         list-style: none;
         width: 220px;
         height: auto;
@@ -123,7 +126,7 @@
     }
 
     .active-mobile-slider {
-        color: var(--quaternary-color) !important;
+        color: var(--quinary-color) !important;
         background-color: #fff;
     }
 
@@ -166,4 +169,68 @@
     #services {grid-gap: 20px;}
 
     #services>h2 {font-size: var(--font-size-2xl);}
+
+    .service-box>img {
+        margin: 5px auto;
+        width: 60%;
+        height: 45%;
+    }
+
+    .service-box>h3 {
+        font-size: var(--font-size-lg);
+        width: 90%;
+    }
+
+    .service-box:nth-child(2n)>h3 {
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+
+    .service-box {
+        height: 400px;
+    }
+
+    #lang>h2 {
+        font-size: var(--font-size-2xl);
+        margin-bottom: 20px;
+    }
+
+    .lang_container>img {
+        height: 35px;
+        width: 35px;
+        border-radius: 2px;
+    }
+
+    #projects_link {height: 50px !important;}
+
+    #project > h2 {
+        font-size: var(--font-size-2xl);
+        margin-bottom: 10px;
+    }
+
+    .project-card {
+        width: 95%;
+        height: 200px;
+        margin: 0 auto;
+        grid-gap: 10px;
+    }
+
+    .project-card>div:nth-child(2) {
+        margin: 0 20px;
+    }
+
+    .project-card>div:nth-child(2)>h3 {
+        font-size: var(--font-size-xl);
+        margin: 20px 0 10px 0;
+    }
+
+    .project-card>div:nth-child(2)>p {
+        font-size: var(--font-size-2sm);
+        line-height: 1.5;
+        width: 95%;
+    }
+
+    .project-card>div:nth-child(2)>a {
+        bottom: 20px;
+    }
 }
