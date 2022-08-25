@@ -234,3 +234,71 @@
         bottom: 20px;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .container-limit {max-width: 95%;}
+    nav {
+        transform: translateX(0);
+        left: 2.5%;
+    }
+    .mobile-nav>.logo-name {
+        font-size: var(--font-size-lg);
+        margin-left: 10px;
+    }
+    .mobile-nav > ion-icon {
+        font-size: var(--font-size-2xl);
+        margin-right: 10px;
+    }
+
+    .header-box {
+        display: block; 
+        text-align: center;
+    }
+    .right-section {display: none;}
+    .left-section {margin: 0;}
+    .left-section>p {width: 100%;}
+    
+    #about-me>p {font-size: var(--font-size-sm)}
+
+    #services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 30px;
+    }
+    .service-box {
+        width: 75%;
+        height: 380px;
+    }
+    .service-box>img {margin: 15px auto;}
+    .service-box:nth-child(2n)>h3 {margin: 10px auto;}
+    .service-box>h3 {margin: 10px auto;}
+
+    .lang_container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(auto-fit, 1fr);
+        grid-gap: 10px;
+    }
+    .lang_container>img {
+        height: 40px;
+        width: 40px;
+        border-radius: 3px;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        height: auto;
+        grid-gap: 0;
+    }
+    .project-card__img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ccc;
+    }
+    .project-card>div:nth-child(2)>h3 {margin: 15px auto;}
+    .project-card>div:nth-child(2)>p {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+}
