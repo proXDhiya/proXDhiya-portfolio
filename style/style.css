@@ -30,6 +30,28 @@
     --quinary-color: #323a64;
 }
 
+codersrank-activity {
+    width: 80%;
+    margin: 0 auto 50px auto;
+    --font-family: var(--font-primary);
+    --label-font-size: 8px;
+    --label-text-color: var(--quinary-color);
+    --legend-font-size: var(--font-size-base);
+    --legend-text-color: var(--quinary-color);
+    --legend-item-width: 10px;
+    --legend-item-height: 10px;
+    --bg-color-0: #EEEEEE;
+    --bg-color-1: #B1E1FF;
+    --bg-color-2: #AFB4FF;
+    --bg-color-3: #8789fa;
+    --bg-color-4: #9c5bff;
+    --border-color-0: #ffffff;
+    --border-color-1: #8aadc2;
+    --border-color-2: #8185b8;
+    --border-color-3: rgb(92, 92, 184);
+    --border-color-4: #573885;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -398,4 +420,12 @@ nav>ul>li:nth-child(6) {
 
 .project-card>div:nth-child(2)a:hover {
     color: var(--quinary-color);
+}
+
+#activity {margin-top: 80px;}
+
+#activity>h2 {
+    font-size: var(--font-size-4xl);
+    margin-bottom: 30px;
+    text-align: center;
 }

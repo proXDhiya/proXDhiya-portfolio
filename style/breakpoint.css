@@ -44,6 +44,9 @@
         line-height: 1.7;
         letter-spacing: .6px;
     }
+
+    #activity>h2 {font-size: var(--font-size-3xl);}
+    codersrank-activity {width: 95%;}
 }
 
 
@@ -234,6 +237,11 @@
 
     .project-card>div:nth-child(2)>a {
         bottom: 20px;
+    }
+
+    #activity>h2 {
+        font-size: var(--font-size-2xl);
+        margin-bottom: 15px;
     }
 }
 
