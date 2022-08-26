@@ -340,7 +340,6 @@ nav>ul>li:nth-child(6) {
 
 #project > h2 {
     font-size: var(--font-size-4xl);
-    margin-bottom: 20px;
     text-align: center;
 }
 
