@@ -311,5 +311,5 @@
         margin-bottom: 10px;
     }
     .service-box {height: 400px;}
-    .lang_container {grid-template-columns: repeat(4, 1fr);}
+    .lang_container {grid-template-columns: repeat(5, 1fr);}
 }
