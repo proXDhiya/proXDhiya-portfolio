@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 :root {
+    /*BreakPoints*/
+    /* --breakpoint-large: 1200px; */
+    /* --breakpoint-medium: 992px; */
+    /* --breakpoint-small: 768px; */
+    /* --breakpoint-x-small: 576px; */
     /*Container*/
     --container-max-width: 1440px;
     --container-padding-y: 60px;
@@ -46,6 +51,15 @@
 
 .container>* {
     padding: var(--container-inner-padding);
+}
+
+.container__section {
+    width: 100%;
+    height: fit-content;
+}
+
+.invert-color:hover>img {
+    filter: invert(1);
 }
 
 .button_template {
@@ -102,6 +116,30 @@
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
+.tech__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid var(--color-primary);
+    border-radius: var(--button-border-radius);
+    width: 186px;
+    height: 186px;
+    transition: background-color 0.3s;
+}
+
+.tech__card:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.tech__card>img {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 10px;
+}
+
 body {
     width: 100vw;
     min-height: 100vh;
@@ -143,6 +181,13 @@ h1 {
     margin-bottom: 20px;
     line-height: 1.5;
     font-weight: var(--font-weight-regular);
+}
+
+h2 {
+    font-weight: var(--font-weight-regular);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: var(--container-padding-y);
 }
 
 h1>span {
@@ -220,7 +265,6 @@ ion-icon {
     width: 100%;
     height: fit-content;
     padding-top: var(--container-padding-y);
-    padding-bottom: var(--container-padding-y);
 }
 
 #hero_section>div {
@@ -258,3 +302,37 @@ ion-icon {
     object-fit: cover;
     margin-left: auto;
 }
+
+#container__section-tech {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+}
+
+@media (max-width: 1300px) {
+    :root {
+        --container-max-width: 1200px;
+        --container-padding-y: 50px;
+        --container-padding-x: 60px;
+        /*button*/
+        --button-padding: 10px 14px;
+        --button-icon-padding: 10px;
+        /*logo*/
+        --logo-font-size: 20px;
+        --logo-padding: 0 0 0 8px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero_section>img {
+        width: 650px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 975px) {}
